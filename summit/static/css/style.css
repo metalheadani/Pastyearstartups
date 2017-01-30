@@ -1,0 +1,103 @@
+body {
+    background: cover;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.parallax1 {
+    /* The image used */
+    background-image: url('images/1.jpg');
+    /* Full height */
+    height: 70%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url('images/2.jpg');
+    /* Full height */
+    height: 70%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax3 {
+    /* The image used */
+    background-image: url('images/3.jpg');
+    /* Full height */
+    height: 70%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron {
+    background-image: url('images/3.jpg');
+    margin: 0px auto;
+    padding: 70px 30px;
+    color: floralwhite;
+    height: 70%;
+}
+
+button {
+    background: none;
+    border: 1px solid white;
+    color: floralwhite;
+}
+
+.row-footer {
+    margin: 0px auto;
+    padding: 20px 0px;
+    background-color: #AfAfAf;
+}
+
+body {
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+
+.navbar-inverse {
+    background: #303F9F;
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus {
+    color: #fff;
+    background: #1A237E;
+}
+
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a:focus {
+    color: #fff;
+    background: #1A237E;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a,
+.navbar-inverse .navbar-nav .open .dropdown-menu {
+    background-color: #303F9F;
+    color: #eeeeee;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+    color: #000000;
+}
+
+.navBardemoBasicUsage md-content .ext-content {
+    padding: 50px;
+    margin: 20px;
+    background-color: #FFF2E0;
+}
