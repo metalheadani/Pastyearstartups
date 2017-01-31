@@ -1,10 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<div class="parallax3">
+        <div class="row">
+            <div class="col-xs-12" style="text-align:height:center; margin-top:-50px; padding-top:28%;padding-left:50px">
+                <div class="fb-like" data-share="true" data-width="450" data-show-faces="true">
+                </div>
+                <h1 style="color:white;font-size:100px;text-align:center;">Startups 2016</h1>
+            </div>
+        </div>
+
+        <div class="row row-content">
+            <!-- row 1 (for carousel)  -->
+            <div class="col-xs-12 col-sm-12">
+                <!-- Carousel start -->
+                <div class="carousel slide" data-ride="carousel" id="mycarousel">
+                    <!--  Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#mycarousel" data-slide-to="1"></li>
+                        <li data-target="#mycarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+
+                        <div class="item active">
+                            <!-- item/slide 1 -->
+                            <div style="text-align:center;"> <img class="img-responsive" src="images/innov8.png" alt="Uthappizza"></div>
+                        </div>
+
+                        <div class="item">
+                            <!-- item/slide 2 -->
+                            <img class="img-responsive" src="images/ds.png" alt="Weekend Grand Buffet">
+                        </div>
+
+                        <div class="item">
+                            <!-- item/slide 3 -->
+                            <img class="img-responsive" src="images/nsdc.png" alt="Alberto">
+                        </div>
+
+                    </div>
+                    <!-- Controls (arrows) -->
+                    <a href="#mycarousel" class="left carousel-control" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
+
+                    <a href="#mycarousel" class="right carousel-control" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+
+                    <!-- buttons at the bottom -->
+                    <div class="btn-group" id="carouselButtons">
+                        <button class="btn btn-danger btn-xs" id="carousel-pause"><span class="glyphicon glyphicon-pause" aria-hidden="true"></span></button>
+                        <button class="btn btn-danger btn-xs" id="carousel-play"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></button>
+                    </div>
+                </div>
+                <!-- End of Carousel -->
+            </div>
+        </div>
+        <!-- End of row 1 -->
+
+    </div>
+
+
+
+    <div class="parallax3" style="height:500px">
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins)
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js "></script>  -->
+    <script src="bower_components/jquery/dist/jquery.min.js "></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed
+    <script src="js/bootstrap.min.js "></script> -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js "></script>
+    <!-- Below is the small function for every tooltips to work properly we have applied a tooltip at "Reserve Table " button of jumbotron  -->
+    <script>
+        $(document).ready(function() {
+            $("#mycarousel ").carousel({
+                interval: 2000
+            });
+            $("#carousel-pause ").click(function() {
+                $("#mycarousel ").carousel('pause');
+            });
+            $("#carousel-play ").click(function() {
+                $("#mycarousel ").carousel('cycle');
+            });
+
+            // Code for activating the Login-modal
+            $("#loginButton ").click(function() { // id is of button
+                $("#loginModal ").modal();
+            });
+
+            //Code for activating the Reserve-table-modal
+            $("#reserve-table ").click(function() { // id is of button
+                $("#reserve_table_modal ").modal();
+            });
+        });
+    </script>
